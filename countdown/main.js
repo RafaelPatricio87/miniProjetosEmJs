@@ -18,7 +18,7 @@ const atualizar = (tempo) => {
     segundos.textContent = formatarDigito(qtdSegundos);
     minutos.textContent = formatarDigito(qtdMinutos)
     horas.textContent = formatarDigito(qtdHoras)
-    dias.textContent = formatarDigito(qtdDias)
+    dias.textContent = qtdDias
 }
 
 const contagemRegressiva = (tempo) => {
@@ -35,7 +35,7 @@ const contagemRegressiva = (tempo) => {
 }
 
 const tempoRestante = () => {
-    const dataEvento = new Date('2023-01-21 06:09:00')
+    const dataEvento = new Date('2023-12-25 06:09:00')
     const hoje = Date.now();
     return Math.floor((dataEvento - hoje) / 1000)
 }
