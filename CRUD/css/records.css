@@ -4,6 +4,12 @@
     text-align: left;
 }
 
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
 .records th{
     height: 50px;
     background-color: var(--primary-color);
